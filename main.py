@@ -2,6 +2,7 @@ import quandl, math
 import pandas as pd
 import numpy as np
 import datetime
+import sklearn
 
 from sklearn.linear_model import LinearRegression
 from sklearn import preprocessing, svm
@@ -9,7 +10,6 @@ from sklearn.model_selection import train_test_split
 
 
 df = quandl.get("WIKI/AMZN")
-
 
 df = df[['Adj. Close']]
 
